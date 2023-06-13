@@ -1,14 +1,15 @@
 import projectsData from "./data/projects.json" assert { type: "json" };
-import contactsData from "./data/contacts.json" assert { type: "json" };
+import infoData from "./data/info.json" assert { type: "json" };
 import fs from "fs";
 
 const header = `<!DOCTYPE html>
 <html>
   <head>
-    <title>‎</title>
-    <link rel="stylesheet" href="index.css" />
+    <meta name="description" content="${infoData.description}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‎</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>`;
 
@@ -38,10 +39,10 @@ ${Object.entries(projectsData).reduce(
 const contacts = `
     <!-- ▒ c ▒ o ▒ n ▒ t ▒ a ▒ c ▒ t ▒ s ▒ -->
 
-    <profile name="${contactsData.name} ${contactsData.surname}" role="${contactsData.role}"></profile>
-    <a ctrl\\cmd+click="→" href="mailto:${contactsData.email}"></a>
-    <a ctrl\\cmd+click="→" href="tel:${contactsData.phone}"></a>
-    <a ctrl\\cmd+click="→" href="${contactsData.linkedin}"></a>
+    <profile name="${infoData.name} ${infoData.surname}" role="${infoData.role}"></profile>
+    <a ctrl\\cmd+click="→" href="mailto:${infoData.email}"></a>
+    <a ctrl\\cmd+click="→" href="tel:${infoData.phone}"></a>
+    <a ctrl\\cmd+click="→" href="${infoData.linkedin}"></a>
 `;
 
 const pageHeader = `
