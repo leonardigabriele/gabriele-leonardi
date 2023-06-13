@@ -39,7 +39,7 @@ ${Object.entries(projectsData).reduce(
 const contacts = `
     <!-- ▒ c ▒ o ▒ n ▒ t ▒ a ▒ c ▒ t ▒ s ▒ -->
 
-    <profile name="${infoData.name} ${infoData.surname}" role="${infoData.role}"></profile>
+    <profile name="${infoData.name} ${infoData.surname}" birth="${infoData.birth}" role="${infoData.role}"></profile>
     <a ctrl\\cmd+click="→" href="mailto:${infoData.email}"></a>
     <a ctrl\\cmd+click="→" href="tel:${infoData.phone}"></a>
     <a ctrl\\cmd+click="→" href="${infoData.linkedin}"></a>
