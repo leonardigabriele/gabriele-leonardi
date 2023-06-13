@@ -1,0 +1,197 @@
+{
+  "regenerative-futures": {
+    "project": "Regenerative Futures: A SPACE10 AI Design Competition",
+    "tagline": "Multi-phase voting system",
+    "link": "https://regenerativefutures.space10.com",
+    "year": "2023",
+    "backend": "Headless WordPress + Gravity Forms",
+    "api": "GraphQL",
+    "frontend": "Vue 3",
+    "state": "live"
+  },
+  "nome-studio": {
+    "project": "Nome Studio",
+    "tagline": "Scroll anchoring with overlay route",
+    "link": "https://nome-studio.gabrieleleonardi.com",
+    "year": "2023",
+    "backend": "Strapi",
+    "api": "GraphQL",
+    "frontend": "Vue 3",
+    "state": "wip"
+  },
+  "future-ensemble": {
+    "project": "future ensemble",
+    "tagline": "Modular grid system and animated SVGs",
+    "link": "https://futureensemble.co",
+    "year": "2023",
+    "backend": "Decap CMS + Vite SSG",
+    "frontend": "Vue 3",
+    "state": "live"
+  },
+  "pinacoteca-agnelli": {
+    "project": "Pinacoteca Agnelli",
+    "tagline": "Complex museum website",
+    "link": "https://pinacoteca-agnelli.it",
+    "year": "2022",
+    "backend": "Headless WordPress",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "live"
+  },
+  "davide-busnelli": {
+    "project": "Davide Busnelli",
+    "tagline": "Using Astro in production",
+    "link": "https://davidebusnelli.netlify.app",
+    "year": "2023",
+    "backend": "Decap CMS + Astro",
+    "frontend": "Astro + Vue 3",
+    "state": "wip"
+  },
+  "twentyfive-av": {
+    "project": "25AV",
+    "tagline": "Trimming typography to the edges",
+    "link": "https://25av.eu",
+    "year": "2022",
+    "backend": "Headless WordPress",
+    "api": "GraphQL",
+    "frontend": "Vue 3",
+    "state": "live"
+  },
+  "fortuny": {
+    "project": "Fortuny",
+    "tagline": "Combining Shopify and Craft CMS",
+    "link": "https://fortuny.com",
+    "year": "2022",
+    "backend": "Craft CMS + Shopify",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live"
+  },
+  "capsule": {
+    "project": "Capsule",
+    "tagline": "Not quite like the old web",
+    "link": "https://capsule.global",
+    "year": "2022",
+    "backend": "Shopify",
+    "api": "GraphQL",
+    "frontend": "Nuxt 2",
+    "state": "live"
+  },
+  "giga-stock": {
+    "project": "Giga Stock",
+    "tagline": "Funky animations",
+    "link": "https://gigastock.net",
+    "year": "2022",
+    "backend": "Shopify",
+    "api": "GraphQL",
+    "frontend": "Nuxt 2",
+    "state": "live"
+  },
+  "prode": {
+    "project": "Prode – Scientific Production in Design",
+    "tagline": "Integrating an interactive 3D model",
+    "link": "https://dev.gigadesignstudio.com/prode.polimi.it",
+    "year": "2022",
+    "backend": "Headless WordPress",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "archived"
+  },
+  "twentyfifty-plus": {
+    "project": "2050+",
+    "tagline": "Brutalist one page",
+    "link": "https://2050.plus",
+    "year": "2022",
+    "backend": "Headless WordPress",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "live"
+  },
+  "flavia-tschanz": {
+    "project": "Flavia Tschanz",
+    "tagline": "Block-based pages with multiple layout variations",
+    "link": "https://flaviatschanz.ch",
+    "year": "2022",
+    "backend": "Headless WordPress + WooCommerce",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "live"
+  },
+  "luca-venturelli": {
+    "project": "Luca Venturelli",
+    "tagline": "Content has to breathe",
+    "link": "http://lucaventurelli.com",
+    "year": "2022",
+    "backend": "static",
+    "frontend": "Nuxt 2",
+    "state": "live"
+  },
+  "at-kollektive": {
+    "project": "At Kollective",
+    "tagline": "HLS videos switching on content interaction",
+    "link": "https://dev.gigadesignstudio.com/at.kollektive",
+    "year": "2022",
+    "backend": "Headless WordPress",
+    "api": "REST",
+    "frontend": "Nuxt 2",
+    "state": "archived"
+  },
+  "nmthree": {
+    "project": "NM3",
+    "tagline": "Working with canvas and lazy loading",
+    "link": "https://nm3.xyz",
+    "year": "2021",
+    "backend": "Headless WordPress + WooCommerce",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "live"
+  },
+  "goliath-cnc": {
+    "project": "Goliath CNC",
+    "tagline": "They won a Compasso d'Oro",
+    "link": "https://goliathcnc.com",
+    "year": "2021",
+    "backend": "Headless WordPress + WooCommerce",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "live"
+  },
+  "albumarte": {
+    "project": "AlbumArte",
+    "tagline": "A custom WordPress theme",
+    "link": "https://albumarte.org",
+    "year": "2022",
+    "backend": "WordPress",
+    "frontend": "custom WordPress theme",
+    "state": "live"
+  },
+  "palloncini-a-domicilio": {
+    "project": "Palloncini a domicilio",
+    "tagline": "Custom balloon buying generator",
+    "link": "https://pallonciniadomicilio.it",
+    "year": "2021",
+    "backend": "Headless WordPress + WooCommerce",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "live"
+  },
+  "frecc": {
+    "project": "Frecc",
+    "tagline": "Keeping it simple",
+    "link": "https://frecc.it",
+    "year": "2021",
+    "backend": "static",
+    "frontend": "HTML + CSS",
+    "state": "live"
+  },
+  "gua-farm": {
+    "project": "Azienda Agricola Gua",
+    "tagline": "Live canvas drawing",
+    "link": "https://gua.farm",
+    "year": "2021",
+    "backend": "Headless WordPress + WooCommerce",
+    "api": "REST",
+    "frontend": "Vue 2",
+    "state": "live"
+  }
+}
