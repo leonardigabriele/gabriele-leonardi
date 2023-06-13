@@ -52,7 +52,7 @@ instructions {
 }
 
 keyboard-shortcuts {
-  line-height: 240%;
+  line-height: 2.8;
   display: grid;
   justify-items: end;
 }
@@ -114,5 +114,9 @@ pre {
 
   page {
     grid-auto-flow: column;
+  }
+
+  keyboard-shortcuts {
+    line-height: 2.4;
   }
 }
