@@ -1,32 +1,118 @@
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-grey: rgb(252, 252, 252);
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --radius: 3px;
+  --line: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
+  color: var(--color-black);
 }
 
 body {
   font-family: monospace;
-  font-size: 16px;
-  display: grid;
+  font-size: 10px;
+  line-height: 1.2;
   height: 100%;
   place-content: center;
   margin: 0;
-  background: rgb(252, 252, 252);
+  background: var(--color-grey);
 }
 
 kbd {
-  border: 1px solid;
-  border-radius: 3px;
-  padding: 3px 6px;
-  background: rgb(255, 255, 255);
-  box-shadow: 1px 1px rgb(0, 0, 0);
+  border: var(--line) solid;
+  border-radius: var(--radius);
+  padding: var(--space-xs) var(--space-s);
+  background: var(--color-white);
+  box-shadow: calc(-1 * var(--line)) var(--line) var(--color-black);
+}
+
+page {
+  display: grid;
+  height: 100%;
 }
 
 instructions {
   display: grid;
-  gap: 16px;
+  gap: var(--space-l);
+  justify-items: end;
+  place-self: center;
+  padding: var(--space-l);
+  text-transform: lowercase;
+}
+
+keyboard-shortcuts {
+  line-height: 240%;
+  display: grid;
   justify-items: end;
 }
 
+#inspector {
+  display: none;
+  background: var(--color-black);
+  color: var(--color-white);
+  grid-template-rows: auto minmax(0, 1fr);
+  overflow-y: hidden;
+}
+
+#inspector:target {
+  display: grid;
+}
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  border-bottom: var(--line) var(--color-white) solid;
+  padding: var(--space-s);
+  text-transform: lowercase;
+  padding: var(--space-xs) var(--space-s);
+  position: sticky;
+  top: 0;
+  background: var(--color-black);
+}
+
 ::selection {
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+#inspector ::selection {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+a {
+  color: inherit;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  padding: var(--space-s);
+  overflow-y: auto;
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --space-l: 32px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  page {
+    grid-auto-flow: column;
+  }
 }
