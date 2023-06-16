@@ -1,6 +1,7 @@
 import projectsData from "./data/projects.json" assert { type: "json" };
 import infoData from "./data/info.json" assert { type: "json" };
 import fs from "fs";
+import { getHighlighter, loadTheme } from "shiki";
 
 const header = `<!DOCTYPE html>
 <html>
@@ -22,19 +23,21 @@ const states = new Map([
 const projects = `
 
     <!-- ▒ p ▒ r ▒ o ▒ j ▒ e ▒ c ▒ t ▒ s ▒ -->
-${Object.entries(projectsData).reduce(
-  (a, [k, v]) => `${a}
+${Object.entries(projectsData)
+  .filter(([k, v]) => v.show)
+  .reduce(
+    (a, [k, v]) => `${a}
     <${k} ✣="${v.tagline}">
       <state ${states.get(v.state)}="${v.state}"></state>
       <project name="${v.project}" year="${v.year}"></project>
       <a ctrl\\cmd+click="→" href="${v.link}"></a>
-      <stack backend="${v.backend}" api="${v.api}" frontend="${
-    v.frontend
-  }"></stack>
+      <stack backend="${v.backend}" ${v.api ? `api="${v.api}" ` : ""}frontend="${
+      v.frontend
+    }"></stack>
     </${k}>
     `,
-  ""
-)}`;
+    ""
+  )}`;
 
 const contacts = `
     <!-- ▒ c ▒ o ▒ n ▒ t ▒ a ▒ c ▒ t ▒ s ▒ -->
@@ -60,11 +63,9 @@ const pageHeader = `
 <nav>
 <div>Inspector</div>
 <a href="#index">Close</a>
-</nav>
-<pre>`;
+</nav>`;
 
 const pageFooter = `
-</pre>
 </inspector>
 </page>`;
 
@@ -72,18 +73,20 @@ const footer = `
   </body>
 </html>`;
 
-const escaped = (content) =>
-  content.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+const custom = await loadTheme("../../custom.json");
+const highlighter = await getHighlighter({
+  theme: custom,
+});
+
+const highlighted = (content) =>
+  highlighter.codeToHtml(content, { lang: "html" });
 
 const parts = [
   header,
   projects,
   contacts,
   pageHeader,
-  escaped(header),
-  escaped(projects),
-  escaped(contacts),
-  escaped(footer),
+  highlighted(`${header}${projects}${contacts}${footer}`),
   pageFooter,
   footer,
 ];

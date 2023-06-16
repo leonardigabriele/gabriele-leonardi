@@ -58,6 +58,13 @@ keyboard-shortcuts {
 }
 
 #inspector {
+  --shiki-color-text: rgb(255, 100, 0);
+  --shiki-color-background: rgb(0, 0, 0);
+  --shiki-token-comment: rgb(255, 100, 0);
+  --shiki-token-keyword: rgb(100, 100, 100);
+  --shiki-token-function: rgb(255, 0, 220);
+  --shiki-token-string-expression: rgb(255, 255, 255);
+
   display: none;
   background: var(--color-black);
   color: var(--color-white);
@@ -98,9 +105,8 @@ a {
 
 pre {
   margin: 0;
-  white-space: pre-wrap;
   padding: var(--space-s);
-  overflow-y: auto;
+  overflow: auto;
 }
 
 @media (min-width: 1000px) {
