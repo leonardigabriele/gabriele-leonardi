@@ -15,26 +15,25 @@
 }
 
 html {
-  height: 100%;
   color: var(--color-black);
+  height: 100%;
 }
 
 body {
+  background: var(--color-grey);
   font-family: monospace;
   font-size: 10px;
-  line-height: 1.2;
   height: 100%;
-  place-content: center;
+  line-height: 1.2;
   margin: 0;
-  background: var(--color-grey);
 }
 
 kbd {
-  border: var(--line) solid;
-  border-radius: var(--radius);
-  padding: var(--space-xs) var(--space-s);
   background: var(--color-white);
+  border-radius: var(--radius);
+  border: var(--line) solid;
   box-shadow: calc(-1 * var(--line)) var(--line) var(--color-black);
+  padding: var(--space-xs) var(--space-s);
 }
 
 page {
@@ -46,28 +45,21 @@ instructions {
   display: grid;
   gap: var(--space-l);
   justify-items: end;
-  place-self: center;
   padding: var(--space-l);
+  place-self: center;
   text-transform: lowercase;
 }
 
 keyboard-shortcuts {
-  line-height: 2.8;
   display: grid;
   justify-items: end;
+  line-height: 2.8;
 }
 
 #inspector {
-  --shiki-color-text: rgb(255, 100, 0);
-  --shiki-color-background: rgb(0, 0, 0);
-  --shiki-token-comment: rgb(255, 100, 0);
-  --shiki-token-keyword: rgb(100, 100, 100);
-  --shiki-token-function: rgb(255, 0, 220);
-  --shiki-token-string-expression: rgb(255, 255, 255);
-
-  display: none;
   background: var(--color-black);
   color: var(--color-white);
+  display: none;
   grid-template-rows: auto minmax(0, 1fr);
   overflow-y: hidden;
 }
@@ -77,16 +69,15 @@ keyboard-shortcuts {
 }
 
 nav {
+  background: var(--color-black);
+  border-bottom: var(--line) var(--color-white) solid;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-  border-bottom: var(--line) var(--color-white) solid;
-  padding: var(--space-s);
-  text-transform: lowercase;
   padding: var(--space-xs) var(--space-s);
   position: sticky;
+  text-transform: lowercase;
   top: 0;
-  background: var(--color-black);
 }
 
 ::selection {
@@ -105,8 +96,8 @@ a {
 
 pre {
   margin: 0;
-  padding: var(--space-s);
   overflow: auto;
+  padding: var(--space-s);
 }
 
 @media (min-width: 1000px) {
