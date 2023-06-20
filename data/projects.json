@@ -132,7 +132,7 @@
   "luca-venturelli": {
     "project": "Luca Venturelli",
     "tagline": "Content has to breathe",
-    "link": "http://lucaventurelli.com",
+    "link": "http://www.lucaventurelli.com",
     "year": "2022",
     "backend": "static",
     "frontend": "Nuxt 2",
