@@ -1,5 +1,41 @@
 {
   "$schema": "vscode://schemas/color-theme",
+  "displayName": "Custom",
+  "name": "custom",
+  "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "newOperator": "#fff",
+    "stringLiteral": "#fff",
+    "customLiteral": "#fff",
+    "numberLiteral": "#fff"
+  },
+  "colors": {
+    "checkbox.border": "#fff",
+    "editor.background": "#000",
+    "editor.foreground": "#fff",
+    "editor.inactiveSelectionBackground": "#fff",
+    "editorIndentGuide.background1": "#000",
+    "editorIndentGuide.activeBackground1": "#000",
+    "editor.selectionHighlightBackground": "#fff",
+    "list.dropBackground": "#000",
+    "activityBarBadge.background": "#000",
+    "sideBarTitle.foreground": "#fff",
+    "input.placeholderForeground": "#000",
+    "menu.background": "#000",
+    "menu.foreground": "#fff",
+    "menu.separatorBackground": "#000",
+    "menu.border": "#000",
+    "statusBarItem.remoteForeground": "#fff",
+    "statusBarItem.remoteBackground": "#fff",
+    "ports.iconRunningProcessForeground": "#fff",
+    "sideBarSectionHeader.background": "#000",
+    "sideBarSectionHeader.border": "#fff",
+    "tab.lastPinnedBorder": "#fff",
+    "list.activeSelectionIconForeground": "#fff",
+    "terminal.inactiveSelectionBackground": "#000",
+    "widget.border": "#000"
+  },
   "tokenColors": [
     {
       "settings": {
@@ -7,11 +43,7 @@
       }
     },
     {
-      "scope": [
-        "meta.embedded",
-        "source.groovy.embedded",
-        "string meta.image.inline.markdown"
-      ],
+      "scope": ["meta.embedded", "source.groovy.embedded", "string meta.image.inline.markdown"],
       "settings": {
         "foreground": "#fff"
       }
@@ -323,10 +355,7 @@
       }
     },
     {
-      "scope": [
-        "punctuation.section.embedded.begin.php",
-        "punctuation.section.embedded.end.php"
-      ],
+      "scope": ["punctuation.section.embedded.begin.php", "punctuation.section.embedded.end.php"],
       "settings": {
         "foreground": "#fff"
       }
@@ -540,37 +569,5 @@
         "foreground": "#fff"
       }
     }
-  ],
-  "semanticTokenColors": {
-    "newOperator": "#fff",
-    "stringLiteral": "#fff",
-    "customLiteral": "#fff",
-    "numberLiteral": "#fff"
-  },
-  "colors": {
-    "checkbox.border": "#fff",
-    "editor.background": "#000",
-    "editor.foreground": "#fff",
-    "editor.inactiveSelectionBackground": "#fff",
-    "editorIndentGuide.background": "#000",
-    "editorIndentGuide.activeBackground": "#000",
-    "editor.selectionHighlightBackground": "#fff",
-    "list.dropBackground": "#000",
-    "activityBarBadge.background": "#000",
-    "sideBarTitle.foreground": "#fff",
-    "input.placeholderForeground": "#000",
-    "menu.background": "#000",
-    "menu.foreground": "#fff",
-    "menu.separatorBackground": "#000",
-    "menu.border": "#000",
-    "statusBarItem.remoteForeground": "#fff",
-    "statusBarItem.remoteBackground": "#fff",
-    "ports.iconRunningProcessForeground": "#fff",
-    "sideBarSectionHeader.background": "#000",
-    "sideBarSectionHeader.border": "#fff",
-    "tab.lastPinnedBorder": "#fff",
-    "list.activeSelectionIconForeground": "#fff",
-    "terminal.inactiveSelectionBackground": "#000",
-    "widget.border": "#000"
-  }
+  ]
 }

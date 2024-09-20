@@ -1,4 +1,81 @@
 {
+  "loewe-foundation-craft-prize-2024": {
+    "project": "Loewe Foundation Craft Prize 2024",
+    "tagline": "Infinite looping scroll of exquisite artworks",
+    "link": "https://craftprizeexhibition.loewe.com",
+    "year": "2024",
+    "backend": "Sanity",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live",
+    "show": true
+  },
+  "bids-for-survival": {
+    "project": "Bid(s) for Survival",
+    "tagline": "3D exploration and digital archive of two exhibitions",
+    "link": "https://bidsforsurvival.com",
+    "year": "2024",
+    "backend": "Sanity",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live",
+    "show": true
+  },
+  "zucchetti": {
+    "project": "Zucchetti",
+    "tagline": "Giving life to a huge database of bathroom products and solutions",
+    "link": "https://zucchettidesign.it",
+    "year": "2024",
+    "backend": "Craft CMS + Craft Commerce",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live",
+    "show": true
+  },
+  "out-of-ram": {
+    "project": "OUT OF RAM",
+    "tagline": "Dynamically rearranging tag-based archive",
+    "link": "https://outofram.xyz",
+    "year": "2024",
+    "backend": "Sanity",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live",
+    "show": true
+  },
+  "massimo-de-carlo": {
+    "project": "Massimo De Carlo",
+    "tagline": "One of the most important art galleries in Italy",
+    "link": "https://massimodecarlo.com",
+    "year": "2024",
+    "backend": "Craft CMS + Shopify",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live",
+    "show": true
+  },
+  "twentyfive-av": {
+    "project": "25AV",
+    "tagline": "Trimming typography to the edges",
+    "link": "https://25av.eu",
+    "year": "2022",
+    "backend": "Headless WordPress",
+    "api": "GraphQL",
+    "frontend": "Vue 3",
+    "state": "live",
+    "show": true
+  },
+  "six-am": {
+    "project": "6:AM",
+    "tagline": "Bold glass portfolio",
+    "link": "https://6am.glass",
+    "year": "2024",
+    "backend": "Sanity",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live",
+    "show": true
+  },
   "regenerative-futures": {
     "project": "Regenerative Futures: A SPACE10 AI Design Competition",
     "tagline": "Multi-phase voting system",
@@ -7,18 +84,18 @@
     "backend": "Headless WordPress + Gravity Forms",
     "api": "GraphQL",
     "frontend": "Vue 3",
-    "state": "live",
-    "show": true
+    "state": "archived",
+    "show": false
   },
   "nome-studio": {
     "project": "Nome Studio",
     "tagline": "Scroll anchoring with overlay route",
-    "link": "https://nome-studio.gabrieleleonardi.com",
+    "link": "https://nome-studio.com",
     "year": "2023",
     "backend": "Strapi",
     "api": "GraphQL",
     "frontend": "Vue 3",
-    "state": "wip",
+    "state": "live",
     "show": true
   },
   "future-ensemble": {
@@ -45,21 +122,10 @@
   "davide-busnelli": {
     "project": "Davide Busnelli",
     "tagline": "Using Astro in production",
-    "link": "https://davidebusnelli.netlify.app",
+    "link": "https://davidebusnelli.com",
     "year": "2023",
     "backend": "Decap CMS + Astro",
     "frontend": "Astro + Vue 3",
-    "state": "wip",
-    "show": true
-  },
-  "twentyfive-av": {
-    "project": "25AV",
-    "tagline": "Trimming typography to the edges",
-    "link": "https://25av.eu",
-    "year": "2022",
-    "backend": "Headless WordPress",
-    "api": "GraphQL",
-    "frontend": "Vue 3",
     "state": "live",
     "show": true
   },
@@ -211,6 +277,7 @@
     "backend": "Headless WordPress + WooCommerce",
     "api": "REST",
     "frontend": "Vue 2",
-    "state": "false"
+    "state": "live",
+    "show": false
   }
 }

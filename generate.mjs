@@ -1,7 +1,7 @@
 import projectsData from "./data/projects.json" assert { type: "json" };
 import infoData from "./data/info.json" assert { type: "json" };
 import fs from "fs";
-import { getHighlighter, loadTheme } from "shiki";
+import { createHighlighter } from "shiki";
 
 const header = `<!DOCTYPE html>
 <html>
@@ -31,9 +31,9 @@ ${Object.entries(projectsData)
       <state ${states.get(v.state)}="${v.state}"></state>
       <project name="${v.project}" year="${v.year}"></project>
       <a ctrl\\cmd+click="→" href="${v.link}"></a>
-      <stack backend="${v.backend}" ${
-      v.api ? `api="${v.api}" ` : ""
-    }frontend="${v.frontend}"></stack>
+      <stack backend="${v.backend}" ${v.api ? `api="${v.api}" ` : ""}frontend="${
+      v.frontend
+    }"></stack>
     </${k}>
     `,
     ""
@@ -73,18 +73,16 @@ const footer = `
   </body>
 </html>`;
 
-const custom = await loadTheme("../../custom.json");
-const highlighter = await getHighlighter({
-  theme: custom,
-});
+const theme = JSON.parse(fs.readFileSync("custom.json", "utf8"));
+
+const highlighter = await createHighlighter({ langs: ["html"], themes: [] });
+await highlighter.loadTheme(theme);
 
 const highlighted = (content) =>
-  highlighter.codeToHtml(
-    content.replaceAll("ctrl\\cmd+click", "select+visit"),
-    {
-      lang: "html",
-    }
-  );
+  highlighter.codeToHtml(content.replaceAll("ctrl\\cmd+click", "select+visit"), {
+    lang: "html",
+    theme: "custom",
+  });
 
 const parts = [
   header,
