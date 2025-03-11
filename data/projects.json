@@ -1,4 +1,26 @@
 {
+  "cc-tapis": {
+    "project": "cc-tapis",
+    "tagline": "Rugs & ASCII",
+    "link": "https://cc-tapis.com",
+    "year": "2024",
+    "backend": "Craft CMS + Shopify",
+    "api": "GraphQL",
+    "frontend": "Nuxt 3",
+    "state": "live",
+    "show": true
+  },
+  "no-ghost": {
+    "project": "No Ghost",
+    "tagline": "Custom restaurant management system",
+    "link": "https://eatnoghost.com",
+    "year": "2025",
+    "backend": "Odoo + Payload CMS",
+    "api": "JSON-RPC + Local API",
+    "frontend": "Next.js 15",
+    "state": "live",
+    "show": true
+  },
   "loewe-foundation-craft-prize-2024": {
     "project": "Loewe Foundation Craft Prize 2024",
     "tagline": "Infinite looping scroll of exquisite artworks",

@@ -1,5 +1,5 @@
-import projectsData from "./data/projects.json" assert { type: "json" };
-import infoData from "./data/info.json" assert { type: "json" };
+import projectsData from "./data/projects.json" with { type: "json" };
+import infoData from "./data/info.json" with { type: "json" };
 import fs from "fs";
 import { createHighlighter } from "shiki";
 
